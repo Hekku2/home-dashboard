@@ -1,6 +1,0 @@
-[submodule "backend"]
-	path = backend
-	url = https://github.com/Hekku2/home-dashboard-backend.git
-[submodule "frontend"]
-	path = frontend
-	url = https://github.com/Hekku2/home-dashboard-frontend.git
