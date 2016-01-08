@@ -17,3 +17,6 @@ npm install
 #Initialize config
 cp backend/config/local_vagrant.js backend/config/local.js
 cp frontend/config/config_vagrant.json frontend/config/config.json
+
+cd frontend
+npm rebuild node-sass
