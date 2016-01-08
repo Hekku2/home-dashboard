@@ -1,50 +1,16 @@
-# 'Boilerplate' for AngularJS + Sails.js 
+# Home dashboard project
 
-### Why?
-Modern web applications has separated front- and backend sides to use. This 'boilerplate' present one way to make
-<em>your</em> application which have fully separated back- and frontend sides. And really this is more than just a
-boilerplate, proper term would be 'example application'.
+## What is it
+Purpose of the home-dashboard project is to visualize sensor data gathered from home (temperature, noise levels, etc).
 
-### Main goals of this boilerplate
-* Separate back- and frontend development
-* Authenticate with backend (possible multiple ways: local, ~~github, twitter,~~ etc.)
-* Power of AngularJS + WebSockets
-* Simple examples how to use these
-* Provide real start point of new applications
+###
+This project is based on [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)
 
-### Directory structure
-* ```backend``` = Sails.js server, just API nothing else [repository](https://github.com/tarlepp/angular-sailsjs-boilerplate-backend)
-* ```frontend``` = Angular SPA, just frontend side [repository](https://github.com/tarlepp/angular-sailsjs-boilerplate-frontend)
+## Directory structure
+* ```backend``` = Backend api [repository](https://github.com/Hekku2/home-dashboard-backend)
+* ```frontend``` = Frontend views [repository](https://github.com/Hekku2/home-dashboard-frontend)
 
 Also note that these 'directories' are just submodules to another repos
-
-#### Backend
-[![GitHub version](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-backend.svg)](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-backend)
-[![Build Status](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend.png?branch=master)](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-backend)
-[![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend)
-[![devDependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend/dev-status.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-backend#info=devDependencies)
-
-For backend side this boilerplate uses Sails.js (imho awesome). See more info at https://github.com/balderdashy/sails
-I have just done some small tweaks to generic workflow of sails nothing else. Backend side of this 'boilerplate' is 
-served on separate repository https://github.com/tarlepp/angular-sailsjs-boilerplate-backend
-
-#### Frontend
-[![GitHub version](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-frontend.svg)](https://badge.fury.io/gh/tarlepp%2Fangular-sailsjs-boilerplate-frontend)
-[![Build Status](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-frontend.png?branch=master)](https://travis-ci.org/tarlepp/angular-sailsjs-boilerplate-frontend)
-[![Dependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-frontend.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-frontend)
-[![devDependency Status](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-frontend/dev-status.svg)](https://david-dm.org/tarlepp/angular-sailsjs-boilerplate-frontend#info=devDependencies)
-
-Boilerplate uses slush-angular for frontend (AngularJS using Google Angular App Structure Recommendations).
-See more info at https://github.com/slushjs/slush-angular This library is awesome to distribute frontend. Frontend side 
-of this 'boilerplate' is served on separate repository https://github.com/tarlepp/angular-sailsjs-boilerplate-frontend
-
-### Used libraries, guides, etc.
-* Sails.js, http://sailsjs.org/
-* slush-angular, https://github.com/slushjs/slush-angular
-* AngularJS, https://angularjs.org/
-* Bootstrap, http://getbootstrap.com/
-* Techniques for authentication in AngularJS applications, https://medium.com/opinionated-angularjs/7bbf0346acec
-* Json Web Tokens, http://angular-tips.com/blog/2014/05/json-web-tokens-examples/
 
 ### Installation
 First of all you have to install <code>npm</code> and <code>node.js</code> to your box. Installation instructions can
