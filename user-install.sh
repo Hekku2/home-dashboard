@@ -1,16 +1,17 @@
 #Global NPM
 wget -O- https://raw.githubusercontent.com/glenpike/npm-g_nosudo/master/npm-g-nosudo.sh | sh
-cat vagrant-bashrc-additions.txt >> .bashrc
 
-source ~/.bashrc
-
+git clone --recursive https://github.com/Hekku2/home-dashboard.git
+cat home-dashboard/vagrant-bashrc-additions.txt >> .bashrc
 npm install bower -g
 npm install gulp -g
 npm install sails -g
-
-git clone --recursive https://github.com/Hekku2/home-dashboard.git
+source ~/.bashrc
 
 cd home-dashboard
+
+mysql --user=root --password=root < db/database_initialization.sql
+
 npm install
 
 #Initialize config
