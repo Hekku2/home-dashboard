@@ -20,3 +20,5 @@ cp frontend/config/config_vagrant.json frontend/config/config.json
 
 cd frontend
 npm rebuild node-sass
+
+--Ruby and scss-lint gem installed

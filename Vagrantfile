@@ -24,6 +24,9 @@ Vagrant.configure(2) do |config|
   
   # Frontend
   config.vm.network "forwarded_port", guest: 3001, host: 3001
+  
+  #livereload
+  config.vm.network "forwarded_port", guest: 35729, host: 35729
 
   config.vm.provision "fix-no-tty", type: "shell" do |s|
     s.privileged = false

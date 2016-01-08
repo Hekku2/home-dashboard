@@ -3,6 +3,16 @@ apt-get -qq update
 apt-get -qq install -y git
 apt-get -qq install python-software-properties python g++ make
 
+#Following is needed by frontend scss lint
+apt-get -qq install ruby
+gem install scss_lint
+
+## Live reload
+apt-get -qq install ruby1.9.1 ruby1.9.1-dev
+gem install bundle
+gem install guard
+gem install guard-livereload
+
 #Database configuration
 debconf-set-selections <<< 'mysql-server mysql-server/root_password password root'
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
