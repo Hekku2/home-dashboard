@@ -32,3 +32,7 @@ nbproject
 .idea
 .node_history
 /.vagrant
+/WindowsSensorClient/WindowsSensorClient/obj
+/WindowsSensorClient/WindowsSensorClient/bin
+/WindowsSensorClient/packages
+/WindowsSensorClient/*.suo
