@@ -32,7 +32,7 @@ namespace WindowsSensorClient
             _token = converted.Token;
         }
 
-        public void SendTemperature(double value)
+        public void SendTemperature(float value)
         {
             _client.UploadValues(string.Format("{0}/measurement",_serviceUrl), MeasurementValues(value));
         }

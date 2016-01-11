@@ -36,3 +36,4 @@ nbproject
 /WindowsSensorClient/WindowsSensorClient/bin
 /WindowsSensorClient/packages
 /WindowsSensorClient/*.suo
+/WindowsSensorClient/WindowsSensorClient.sln.DotSettings.user
