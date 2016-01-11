@@ -1,5 +1,4 @@
-﻿using System;
-using OpenHardwareMonitor.Hardware;
+﻿using WindowsSensorClient.Properties;
 
 namespace WindowsSensorClient
 {
@@ -8,7 +7,7 @@ namespace WindowsSensorClient
         public static void Main(string[] args)
         {
             using (var temperatureReader = new TemperatureReader())
-            using (var client = new WebServiceClient("http://localhost:1337", "admin", "adminadminadmin", 2))
+            using (var client = new WebServiceClient(Settings.Default.BackEndAddress, Settings.Default.Username, Settings.Default.Password, Settings.Default.SensorId))
             {
                 var temperature = temperatureReader.ReadCpuTemperature();
                 if (temperature.HasValue)
