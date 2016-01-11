@@ -7,7 +7,7 @@ using Newtonsoft.Json;
 
 namespace WindowsSensorClient
 {
-    public class WebServiceClient : IDisposable
+    public sealed class WebServiceClient : IDisposable
     {
         private readonly string _serviceUrl;
         private readonly string _username;

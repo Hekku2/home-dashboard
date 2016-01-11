@@ -1,20 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenHardwareMonitor.Hardware;
 
 namespace WindowsSensorClient
 {
-    public class TemperatureReader : IDisposable
+    public sealed class TemperatureReader : IDisposable
     {
-        private readonly Computer _computer;
-
-        public TemperatureReader()
-        {
-            _computer = new Computer();
-        }
+        private readonly Computer _computer = new Computer();
 
         public float? ReadCpuTemperature()
         {
