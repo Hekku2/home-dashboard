@@ -4,3 +4,6 @@
 [submodule "backend"]
 	path = backend
 	url = https://github.com/Hekku2/home-dashboard-backend
+[submodule "windows-client"]
+	path = windows-client
+	url = https://github.com/Hekku2/home-dashboard-windowsclient.git
