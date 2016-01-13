@@ -9,22 +9,18 @@ This project is based on [angular-sailsjs-boilerplate](https://github.com/tarlep
 ## Directory structure
 * ```backend``` = Backend api [repository](https://github.com/Hekku2/home-dashboard-backend)
 * ```frontend``` = Frontend views [repository](https://github.com/Hekku2/home-dashboard-frontend)
+* ```windows-client``` = Windows client [repository](https://github.com/Hekku2/home-dashboard-windowsclient)
 
 Also note that these 'directories' are just submodules to another repos
 
 ### Installation
-First of all you have to install <code>npm</code> and <code>node.js</code> to your box. Installation instructions can
-be found [here](http://sailsjs.org/#/getStarted?q=what-os-do-i-need).
+Install vagrant
 
-After that you need to install <code>bower</code>, <code>gulp</code> and <code>sails</code> main packages to make all 
-things to happen. These can be installed with following commands on your *nix box.
 <pre>
-sudo npm install bower -g
-sudo npm install gulp -g
-sudo npm install sails -g
+vagrant up
 </pre>
 
-After that you need to download codes of this project to your computer, please follow instructions below.
+See ```bootstrap.sh``` and ```user-install.sh```
 
 #### Back- and frontend installation
 Navigate yourself to directory where you downloaded or cloned this repo and run following command on shell:
@@ -132,21 +128,7 @@ Below is small list of possible failures that can occur while trying this POC.
     </li>
 </ol>
 
-## Demo
-This might be up and running... or not. http://wunder.sytes.net:3000/
-
-## Who is using this?
-* All in my own sails.js projects, @tarlepp
-* [Hackday 2015 - infoTV](https://github.com/ProtaconSolutions/hackday-2015)
-* [Liukko-POC](https://github.com/ProtaconSolutions/Liukko-POC)
-* [switch168](https://github.com/switch168)
-
-If you're using this please make PR and add your project to this list.
-
-## Author
-Tarmo Leppänen
-
 ## License
 The MIT License (MIT)
 
-Copyright (c) 2015 Tarmo Leppänen
+Based on tarlepp's [angular-sailsjs-boilerplate](https://github.com/tarlepp/angular-sailsjs-boilerplate)
