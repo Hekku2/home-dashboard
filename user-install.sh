@@ -12,8 +12,6 @@ cd home-dashboard
 
 mysql --user=root --password=root < db/database_initialization.sql
 
-npm install
-
 #Initialize config
 cp backend/config/local_vagrant.js backend/config/local.js
 cp frontend/config/config_vagrant.json frontend/config/config.json

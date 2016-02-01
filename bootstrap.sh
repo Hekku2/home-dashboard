@@ -18,6 +18,14 @@ debconf-set-selections <<< 'mysql-server mysql-server/root_password password roo
 debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password root'
 apt-get -qq install -y mysql-server
 
+mysql --user=root --password=root -e "create user 'root'@'10.0.2.2' identified by 'root';"
+mysql --user=root --password=root -e "grant all privileges on *.* to 'root'@'10.0.2.2' with grant option;"
+mysql --user=root --password=root -e "flush privileges;"
+
+echo '[mysqld]' >> /etc/mysql/conf.d/vagrant-override.cnf
+echo 'bind-address=0.0.0.0' >> /etc/mysql/conf.d/vagrant-override.cnf
+sudo service mysql restart
+
 #Node js
 curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 apt-get -qq install -y nodejs build-essential

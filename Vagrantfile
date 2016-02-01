@@ -19,6 +19,9 @@ Vagrant.configure(2) do |config|
     v.memory = 1024
   end
   
+  # DB management
+  config.vm.network "forwarded_port", guest: 3306, host: 3306
+  
   # Backend
   config.vm.network "forwarded_port", guest: 1337, host: 1337
   
