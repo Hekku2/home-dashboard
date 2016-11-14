@@ -7,3 +7,6 @@
 [submodule "windows-client"]
 	path = windows-client
 	url = https://github.com/Hekku2/home-dashboard-windowsclient.git
+[submodule "python-client"]
+	path = python-client
+	url = https://github.com/Hekku2/home-dashboard-pythonclient.git
